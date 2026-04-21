@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="Header">Smart Event Dashboard</h1>
+        <div class="leftdiv">
+            <h2 class="Head div">Add New Event</h2>
+            <form class="form" onsubmit="eventSubmitHandler(event)">
+                <label>Event Title : </label>
+                <input type="text" name="title">
+                <label>Event Date : </label>
+                <input type="date" name="date" id="dd/mm/yyyy">
+                <label>Category : </label>
+                <select name="category" id="">
+                    <option value="confrence">confrence</option>
+                    <option value="workshop">workshop</option>
+                    <option value="meetup">meetup</option>
+                    <option value="webinar">webinar</option>     
+                    <option value="social">social</option>
+                </select>
+                <label>Discription : </label>
+                <textarea name="description"></textarea>
+                <input class="submit" type="submit" value="Add Event">
+            </form>
+        </div>
+        <div class="rightdiv">
+            <h2 class="Head">My Events</h2>
+            <input class="submit" id="clear-all" type="button" value="Clear All Events">
+            <div id="event-list"></div> 
+        </div>
+    </div>
+    <script src=undex.js></script>
+</body>
+</html>
